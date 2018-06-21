@@ -1,0 +1,2 @@
+- [如何从0学习opencv,完成类似人脸检测的毕设？](https://www.zhihu.com/question/38536019)
+- [Python OpenCV: Face detection and counting] (https://techtutorialsx.com/2017/05/02/python-opencv-face-detection-and-counting/)
