@@ -1,1 +1,4 @@
 venv3/
+*.exe
+*.exe.*
+bin
