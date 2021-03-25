@@ -12,6 +12,9 @@ img : img.cpp
 camera : camera.cpp
 	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
 
+video : video.cpp
+	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
+
 clean:
 	rm -rf *.exe *.gdb *.o
 

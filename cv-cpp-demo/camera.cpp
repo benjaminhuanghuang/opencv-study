@@ -12,13 +12,14 @@ int main()
   int deviceID = 0;        // 0 = open default camera
   int apiID = cv::CAP_ANY; // 0 = autodetect default API
   cap.open(deviceID, apiID);
+
   if (!cap.isOpened())
   {
     cerr << "ERROR! Unable to open camera\n";
     return -1;
   }
-  Mat frame;
 
+  Mat frame;
   while (1)
   {
     cap.read(frame);
