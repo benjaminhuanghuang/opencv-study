@@ -15,6 +15,12 @@ camera : camera.cpp
 video : video.cpp
 	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
 
+draw : draw.cpp
+	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
+
+color-detect : color-detect.cpp
+	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
+
 clean:
 	rm -rf *.exe *.gdb *.o
 
