@@ -9,7 +9,9 @@ using namespace std;
 int main()
 {
   VideoCapture cap;
-  cap.open(0, cv::CAP_ANY);
+  int deviceID = 0;        // 0 = open default camera
+  int apiID = cv::CAP_ANY; // 0 = autodetect default API
+  cap.open(deviceID, apiID);
   if (!cap.isOpened())
   {
     cerr << "ERROR! Unable to open camera\n";
